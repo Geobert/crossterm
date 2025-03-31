@@ -153,6 +153,7 @@ features = ["event-stream"]
 | `serde`        | (De)serializing of events.                   |
 | `events`        | Reading input/system events (enabled by default) |
 | `filedescriptor` | Use raw filedescriptor for all events rather then mio dependency |
+| `derive-more`  | Adds `is_*` helper functions for event types |
 
 
 To use crossterm as a very thin layer you can disable the `events` feature or use `filedescriptor` feature. 
@@ -170,6 +171,7 @@ This can disable `mio` / `signal-hook` / `signal-hook-mio` dependencies.
 | `winapi`       | Used for low-level windows system calls which ANSI codes can't replace           | windows only                          |
 | `futures-core` | For async stream of events                                                       | only with `event-stream` feature flag |
 | `serde`        | ***ser***ializing and ***de***serializing of events                              | only with `serde` feature flag        |
+| `derive_more`  | Adds `is_*` helper functions for event types                                     | optional (`derive-more` feature), included by default |
 
 ### Other Resources
 
@@ -180,7 +182,7 @@ This can disable `mio` / `signal-hook` / `signal-hook-mio` dependencies.
 
 - [Broot](https://dystroy.org/broot/)
 - [Cursive](https://github.com/gyscos/Cursive)
-- [TUI](https://github.com/fdehau/tui-rs)
+- [Ratatui](https://github.com/ratatui/ratatui)
 - [Rust-sloth](https://github.com/ecumene/rust-sloth)
 - [Rusty-rain](https://github.com/cowboy8625/rusty-rain)
 
